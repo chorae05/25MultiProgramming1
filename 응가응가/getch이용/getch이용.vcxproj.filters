@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="응가.c">
+    <ClCompile Include="짜장면.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
