@@ -26,7 +26,7 @@ while (i < 101) {
 }
 */
 
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
 	//0부터 1000까지 숫자중 3의 배수를 출력하세요.
@@ -57,4 +57,27 @@ int main()
 
 	return 0;
 }
-	
+	*/
+
+
+//1부터 100까지의 합은 5050입니다/..
+#include <stdio.h>
+
+int main()
+{
+	int i, sum;
+	i = 1;
+	sum = 0;
+
+	while (i <= 100)
+	{
+		sum += i;
+
+		i++;
+	}
+	printf("1부터 100까지의 합은 %d입니다.", sum);
+
+	return 0;
+
+}
+
