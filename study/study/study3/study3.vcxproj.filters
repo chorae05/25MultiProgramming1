@@ -21,9 +21,6 @@
     <ClCompile Include="getchar.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="time.h.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="gotoxy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>

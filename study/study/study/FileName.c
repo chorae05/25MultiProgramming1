@@ -52,12 +52,6 @@ int main() {
 	야라고 입력하면 100ms뒤에 왜? 라고 대답하고 대답시간이 얼마나 걸렸는지 출력하세요.
 	
 	
-	
-	
-	
-	
-	
-	
 	clock_t start, end;
 	double cpu_time_used;
 
@@ -67,11 +61,7 @@ int main() {
 		printf("야");
 		sleep(100);
 			printf("왜");
-			
-
-
 		
-	
 	end = clock();
 
 	cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
@@ -144,28 +134,4 @@ end = clock();
 cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
 printf("처음 대답 시작 시간은 : %d 초\n나중 대답 시간은대답 시간은 : %d초\n총 %f초 걸렸습니다",start / CLOCKS_PER_SEC, end / CLOCKS_PER_SEC, cpu_time_used
 );*/
-//첫번쨰줄, 다섯번째줄은 별이 다섯개
-//2,3,4는 별띄어쓰기띄어쓰기
 
-int x = 0, y = 0;
-while (1) {
-	gotoxy(x, y);
-	printf("*");
-	Sleep(100);
-	if (x < 5 && y < 5) {
-		if (y==0)
-	}
-	
-}
-return 0;
-}
-//00 01 02 03 04 14 24 34 44 43 42 41 40 30 20 10 
-void gotoxy(int x, int y)
-
-{
-
-	COORD pos = { x,y };
-
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
-
-}
