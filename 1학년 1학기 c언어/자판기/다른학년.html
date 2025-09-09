@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scent Point</title>
+  <style>
+#vendingbody {
+              position: absolute;
+              width: 650px;
+              height: 730px;
+              }
+#perfume1 {
+          position: absolute; 
+          margin-top: 195px;
+          margin-left: 60px;
+          width: 60px;
+          height: 100px;
+          }
+#perfume2 {
+          position: absolute;
+          margin-top: 195px;
+          margin-left: 132px;
+          width: 60px;
+          height:100px; 
+          }
+#perfume3 { 
+          position: absolute; 
+          margin-top: 190px; 
+          margin-left: 204px; 
+          width: 70px; 
+          height: 107px; 
+          }
+#perfume4 { 
+          position: absolute; 
+          margin-top: 204px; 
+          margin-left: 283px; 
+          width: 50px; 
+          height: 90px; 
+         }
+#perfume5 { 
+          position: absolute; 
+          margin-top: 199px; 
+          margin-left: 356px;
+          width: 50px;
+          height: 95px;
+          }
+#price1 { 
+        position: absolute; 
+        margin-top: 280px; 
+        margin-left: 73px; 
+        width: 35px; 
+        }
+#price2 { 
+        position: absolute; 
+        margin-top: 280px;
+        margin-left: 143px; 
+        width: 37px;
+        }
+#price3 { 
+        position: absolute; 
+        margin-top: 280px; 
+        margin-left: 220px; 
+        width: 35px; 
+        }
+
+#price4 { 
+        position: absolute; 
+        margin-top: 280px;
+        margin-left: 291px;
+        width: 35px; 
+       }
+#price5 {
+        position: absolute; 
+        margin-top: 280px; 
+        margin-left: 363px; 
+        width: 35px; 
+        }
+#price {
+	      position:absolute;
+	      background-color: #4BC3FF;
+	      border-radius: 10px;
+        margin-left: 460px;
+	      margin-top:212px;
+	      padding-top: 5px;
+	 	    padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+	      width: 132px;
+	      height: 45px;
+	      font: bold 13px arial,sans-serif;
+	      color: #e80000;
+        font-size: 15px;
+        z-index: 10;
+        }
+#bill {
+	    position:absolute;
+	    background-color: #4f4f4f;
+	    border-radius: 10px;
+	    margin-left: 460px;
+	    margin-top:340px;
+	    width: 90px;
+	    height: 30px;
+	    }
+#coinback {
+	        position:absolute;
+	        background-color: #4f4f4f;
+	        border-radius: 10px;
+	        margin-left: 458px;
+	        margin-top:376px;
+	        width: 150px;
+	        height: 90px;
+	        }
+#sprayperfume1 {
+               position:absolute;
+	             background-color: #4f4f4f;
+	             border-radius: 50px;
+	             margin-left: 70px;
+	             margin-top:319px;
+	             width: 30px;
+              }
+#output1 { 
+          position: absolute; 
+          margin-top: 319px; 
+          margin-left: 70px; 
+          width: 30px;
+          height: 30px; 
+          cursor:pointer;
+          }
+#output2 {
+          position: absolute;
+          margin-top: 319px;
+          margin-left: 143px;
+          width: 30px;
+          height: 30px;
+          cursor:pointer;
+          }
+#output3 {
+         position: absolute;
+         margin-top: 319px;
+         margin-left: 218px; 
+         width: 30px; 
+         height: 30px; 
+         cursor:pointer;
+         }
+#output4 {
+          position: absolute;
+          margin-top: 319px;
+          margin-left: 295px;
+          width: 30px;
+          height: 30px;
+          cursor:pointer;
+         } 
+#output5 {
+          position: absolute;
+          margin-top: 319px;
+          margin-left: 370px;
+          width: 30px;
+          height: 30px;
+          cursor:pointer;
+          }
+ #arrow1 {
+          position: absolute; 
+          margin-top: 360px; 
+          margin-left: 60px; 
+          width: 50px; 
+         }
+#arrow2 { 
+        position: absolute; 
+        margin-top: 360px; 
+        margin-left: 131px; 
+        width: 50px; 
+        }
+#arrow3 { 
+        position: absolute;
+        margin-top: 360px; 
+        margin-left: 208px; 
+        width: 50px; 
+       }
+#arrow4 { 
+        position: absolute; 
+        margin-top: 360px; 
+        margin-left: 285px; 
+        width: 50px; 
+        }
+#arrow5 { 
+        position: absolute; 
+        margin-top: 360px; 
+        margin-left: 360px; 
+        width: 50px; 
+        }
+#nopress1 { 
+          position: absolute; 
+          margin-top: 420px; 
+          margin-left: 60px; 
+          width: 50px; 
+          height: 50px; 
+          z-index: 10;
+          cursor:pointer;  
+          }
+#nopress2 { 
+          position: absolute; 
+          margin-top: 420px; 
+          margin-left: 131px; 
+          width: 50px; 
+          height: 50px; 
+           z-index: 10;
+          cursor:pointer; 
+          }
+#nopress3 { 
+          position: absolute; 
+          margin-top: 420px; 
+          margin-left: 208px; 
+          width: 50px; 
+          height: 50px; 
+          z-index: 10;
+          cursor:pointer;
+          }
+#nopress4 { 
+          position: absolute; 
+          margin-top: 420px;
+          margin-left: 285px; 
+          width: 50px; 
+          height: 50px;  
+          z-index: 10;
+          cursor:pointer;
+          }
+#nopress5 { 
+          position: absolute; 
+          margin-top: 420px; 
+          margin-left: 360px; 
+          width: 50px; 
+          height: 50px; 
+          z-index: 10;
+          cursor:pointer; 
+          }
+.spray-animation {
+       animation: spray 1s ease-in-out 3;
+}
+    @keyframes spray {
+                     0% { transform: rotate(0deg) translateX(0); opacity: 1; }
+                     25% { transform: rotate(45deg) translateX(10px); }
+                     50% { transform: rotate(-45deg) translateX(-10px); }
+                     75% { transform: rotate(45deg) translateX(10px); }
+                     100% { transform: rotate(0deg) translateX(0); opacity: 0; }
+                     }
+#cardreader { 
+            position: absolute;
+            margin-top: 275px; 
+            margin-left: 460px; 
+            width: 90px; 
+            height: 60px; 
+            cursor:pointer;
+            }
+#billinput { 
+           position: absolute; 
+           margin-top: 340px; 
+           margin-left: 460px; 
+           width: 90px; 
+           height: 30px; 
+           cursor:pointer;
+          }
+#refund { 
+        position: absolute; 
+        margin-top: 376px; 
+        margin-left: 458px; 
+        width: 150px; 
+        height: 90px; 
+        cursor:pointer;
+        }
+#coininput { 
+           position: absolute; 
+           margin-top: 280px; 
+           margin-left: 560px; 
+           width: 40px; 
+           height: 40px; 
+           cursor: pointer;
+          }
+#refundbutton { 
+              position: absolute; 
+              margin-top: 325px; 
+              margin-left: 560px; 
+              width: 45px; 
+              height: 45px;
+              z-index: 1;
+              cursor:pointer; 
+              }
+
+ #modelimg { 
+            position: absolute; 
+            margin-top: 505px; 
+            margin-left: 70px; 
+            width: 500px; 
+            height: 200px;
+            background-color: #3c83ff;
+            border-radius: 20px; 
+            }
+#money1000 { 
+           position: absolute; 
+           margin-top: 240px; 
+           margin-left: 750px; 
+           width: 150px; 
+           cursor:pointer;
+           }
+#money5000 { 
+           position: absolute; 
+           margin-top: 340px; 
+           margin-left: 750px; 
+           width: 150px; 
+           cursor:pointer; 
+           }
+#money10000 { 
+             position: absolute; 
+             margin-top: 440px; 
+             margin-left: 750px; 
+             width: 150px; 
+             cursor:pointer; 
+             }
+#money50000 {
+             position: absolute; 
+             margin-top: 540px; 
+             margin-left: 750px; 
+             width: 150px; 
+             cursor:pointer; 
+             }
+#coin100 { 
+          position: absolute; 
+          margin-top: 167px; 
+          margin-left: 755px; 
+          width: 40px; 
+          cursor:pointer; 
+          }
+#coin500 { 
+          position: absolute; 
+          margin-top: 160px; 
+          margin-left: 835px; 
+          width: 50px; 
+          cursor:pointer;
+          }
+#card { 
+      position: absolute; 
+      margin-top: 300px; 
+      margin-left: 960px; 
+      width: 110px; 
+      height: 80px; 
+      cursor:pointer; 
+      }
+#nocard { 
+        position: absolute; 
+        margin-top: 430px; 
+        margin-left: 960px; 
+        width: 110px; 
+        height: 80px; 
+        cursor:pointer; 
+        }
+  </style>
+  <script>
+var cardUsed = false;  // 💳 카드 결제 여부 확인
+var inputSum = 0; 
+var change;
+
+function promptCardPayment() 
+{
+  alert("카드를 삽입하셨습니다. 원하는 향수를 선택해 주세요.");
+}
+
+function confirmPayment() 
+{
+    alert("결제된 금액: " + inputSum + "원");
+    alert("카드 결제가 완료되었습니다. 3초 뒤에 향수가 뿌려집니다.");
+
+    activatePressButtons(); 
+    setTimeout(() => {
+        sprayPerfume();
+    }, 3000);
+}
+
+function checkButtonActivation() {
+    const prices = [3500, 20000, 3500, 5500, 8000];
+    for (let i = 0; i < prices.length; i++) {
+        const press = document.getElementById("nopress" + (i + 1));
+        if (inputSum >= prices[i]) {
+            press.src = "활성화버튼.png";
+            press.style.pointerEvents = "auto";
+        } else {
+            press.src = "비활성화버튼.png";
+            press.style.pointerEvents = "none";
+        }
+    }
+}
+
+function alerUser() {
+    alert("잔액이 부족합니다.");  
+    location.assign(soce);
+}
+
+function refunddown() {
+    document.getElementById("refundbutton").src ="반환버튼11.png";
+    document.getElementById("refundbutton").height=45;
+    document.getElementById("refundbutton").width=45;
+    document.getElementById("refundbutton").style.marginTop = "325px";
+}
+
+function refundup() {
+    document.getElementById("refundbutton").src ="반환버튼10.png";
+    document.getElementById("refundbutton").height=45;
+    document.getElementById("refundbutton").width=45;
+    document.getElementById("refundbutton").style.marginTop = "325px";
+}
+
+function func1(btn) {
+    inputSum += Number(btn);
+    document.querySelector('#calc').value = inputSum;
+    checkButtonActivation(); 
+}
+
+function handlePerfumePurchase(price, outputId) {
+    if (inputSum >= price) {
+        const confirmPurchase = confirm(price + "원을 결제하시겠습니까?");
+        if (confirmPurchase) {
+            alert("결제가 되었습니다. 3초 뒤에 향수가 뿌려집니다.");
+            setTimeout(() => {
+                inputSum -= price;
+                document.querySelector('#calc').value = inputSum;
+                const el = document.getElementById(outputId);
+                if (el) {
+                    el.src = "뿌려진향수.png";
+                    el.classList.add('spray-animation');
+                    setTimeout(() => {
+                        el.src = "분사구멍.png";
+                        el.classList.remove('spray-animation');
+
+                        if (cardUsed && inputSum > 0) {
+                            alert("남은 금액 " + inputSum + "원이 카드로 반환되었습니다. (카드 잔액 자동 소멸)");
+                            inputSum = 0;
+                            document.querySelector('#calc').value = 0;
+                            cardUsed = false;
+                        } else if (!cardUsed && inputSum > 0) {
+                            change = inputSum;
+                            inputSum = 0;
+                            document.querySelector('#calc').value = 0;
+                            alert("거스름돈을 가져가세요.");
+                            document.getElementById("refund").src = "반환된돈.png";
+                        }
+                        for (let i = 1; i <= 5; i++) {
+                            const btn = document.getElementById("nopress" + i);
+                            btn.src = "비활성화버튼.png";
+                            btn.style.pointerEvents = "none";
+                        }
+                    }, 3000);
+                }
+            }, 3000);
+        }
+    } else {
+        alert("잔액이 부족합니다.");
+    }
+}
+
+function func2(price, outputId) {
+    handlePerfumePurchase(price, outputId);
+}
+
+function func3(btn){
+    var f1 = document.querySelector('#calc');
+    f1.setAttribute('value', '');
+    if (inputSum == 0) {
+        alert("잔돈이 없습니다.");
+        document.getElementById("refund").src ="반환구.png";
+    } else {
+        change = inputSum;
+        document.getElementById("refund").src ="반환된돈.png";
+        alert(change + "원이 반환되었습니다. 거스름돈을 가져가세요.");
+        inputSum = 0;
+        f1.value = 0;
+        checkButtonActivation();
+    }
+}
+
+function func4(btn){
+    document.getElementById("refund").src ="반환구.png";
+    if (change > 0){
+        alert(change + "원을 거슬러 받았습니다.");
+        change = 0;
+    } else{
+        alert("잔돈이 없습니다.");
+    }
+}
+
+function but1() { handlePerfumePurchase(3500, "output1"); }
+function but2() { handlePerfumePurchase(20000, "output2"); }
+function but3() { handlePerfumePurchase(3500, "output3"); }
+function but4() { handlePerfumePurchase(5500, "output4"); }
+function but5() { handlePerfumePurchase(8000, "output5"); }
+
+const modelImages = [
+    "향수모델1.png",
+    "향수모델2.png",
+    "향수모델3.png",
+];
+let modelIndex = 0;
+setInterval(() => {
+    modelIndex = (modelIndex + 1) % modelImages.length;
+    document.getElementById("modelimg").src = modelImages[modelIndex];
+}, 5000);
+
+  </script>
+  </head>
+  <body> 
+ <img id="vendingbody" src="본체2.png" alt="본체2"></div>
+<!-- 향수 이미지 -->
+<img id="perfume1" src="./향수1.png" alt="향수 1"></div>
+<img id="perfume2" src="./향수2.png" alt="향수 2"></div>
+<img id="perfume3" src="./향수3.png" alt="향수 3"></div>
+<img id="perfume4" src="./향수4.png" alt="향수 4"></div>
+<img id="perfume5" src="./향수5.png" alt="향수 5"></div>
+<!-- 가격표 -->
+<img id="price1" src="./3500원.png" alt="3500원"></div>
+<img id="price2" src="./20000원.png" alt="4500원"></div>
+<img id="price3" src="./3500원.png" alt="3500원"></div>
+<img id="price4" src="./5500원.png" alt="4000원"></div>
+<img id="price5" src="./8000원.png" alt="4000원"></div>
+
+
+
+    <!-- 향수 나오는 입구 -->
+<img id="output1" src="./분사구멍.png" alt="향수 나오는 입구"></div>
+<img id="output2" src="./분사구멍.png" alt="향수 나오는 입구"></div>
+<img id="output3" src="./분사구멍.png" alt="향수 나오는 입구"></div>
+<img id="output4" src="./분사구멍.png" alt="향수 나오는 입구"></div>
+<img id="output5" src="./분사구멍.png" alt="향수 나오는 입구"></div>
+    <!-- 화살표 -->
+<img id="arrow1" src="./화살표.png"></div>
+<img id="arrow2" src="./화살표.png"></div>
+<img id="arrow3" src="./화살표.png"></div>
+<img id="arrow4" src="./화살표.png"></div>
+<img id="arrow5" src="./화살표.png"></div>
+    <!-- 버튼 -->
+<img id="nopress1" src="비활성화버튼.png" onclick="func2(3500, 'output1')" onclick="promptCardPayment()">
+<img id="nopress2" src="비활성화버튼.png" onclick="func2(20000, 'output2')" onclick="promptCardPayment()">
+<img id="nopress3" src="비활성화버튼.png" onclick="func2(3500, 'output3')" onclick="promptCardPayment()">
+<img id="nopress4" src="비활성화버튼.png" onclick="func2(5500, 'output4')" onclick="promptCardPayment()">
+<img id="nopress5" src="비활성화버튼.png" onclick="func2(8000, 'output5')" onclick="promptCardPayment()">
+    <!-- 카드단말기 / 디스플레이 -->
+<img id="cardreader" src="카드단말기.png">
+<div class="container" style="position: relative;"><div id="판매중"></div>
+<img id="coin100" src="돈100원.png" onclick="func1(100)"width="50" height="50" ></div>
+<img id="coin500" src="돈500원.png" onclick="func1(500)"width="60" height="60" ></div>
+<img id="money1000" src="돈1000원.png" onclick="func1(1000)"width="130" height="70" ></div>
+<img id="money5000" src="돈5000원.png" onclick="func1(5000)"width="130" height="70" ></div>
+<img id="money10000" src="돈10000원.png" onclick="func1(10000)"width="130" height="70" ></div>
+<img id="money50000" src="돈50000원.png" onclick="func1(50000)"width="130" height="70"></div>
+<img id="card" src="카드.png" onclick="promptCardPayment()">
+<img id="nocard" src="잔액부족카드.png" onclick="alerUser()"></div>
+    <!-- 지페투입구 / 반환구 -->
+<img id="billinput" src="지폐투입구.png"></div>
+<img id="refund" src="반환구.png"onclick="func4()"></div>
+    <!-- 동전 투입구 -->
+<img id="coininput" src="동전투입.png"></div>
+
+    <!-- 반환버튼 -->
+<img id="refundbutton" onclick="func3()" onmousedown="refunddown()" onmouseup="refundup()" src="반환버튼10.png" width="45" height="45"></div>
+<div id="price">판매중<input id="calc" style="margin:2px 28px 0px 0px; background-color: #4BC3FF; border:0; color:red; width:110px; height:30px; font-size:20px; text-align: right;" readonly type="text" name="result" value=""></div>
+  
+<!-- 모델 사진 -->
+<img id="modelimg" src="향수모델1.png" alt="모델 이미지"></div>
+<img id="분사구멍" onmouseover="exitopen()" onmouseout="exitclose()" src="분사구멍.png" width="350" height="200"></div>
+
+</body>
+</html> 
